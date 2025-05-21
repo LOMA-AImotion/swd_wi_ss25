@@ -16,8 +16,9 @@ import os
 quiz_datei = os.path.join(os.path.dirname(__file__), quiz_datei)
 print(os.path.dirname(__file__))
 print(quiz_datei)
-fragen = thi_quiz_data.lade_fragen(quiz_datei)
-print("In Main: ", fragen)
+alle_fragen = thi_quiz_data.lade_fragen(quiz_datei)
+print("In Main: ", alle_fragen)
+
 # Ziehe eine Frage daraus
 # Starte GUI
 # Zeige die gewählte Frage in der GUI
