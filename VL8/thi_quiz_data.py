@@ -11,7 +11,7 @@ def lese_datei(datei_name:str) -> list:
         zeilen = f.read().splitlines()
     return zeilen
 
-ANZAHL_FRAGEN = 4
+ANZAHL_ALTERNATIVEN = 4
 def lade_fragen(datei_name: str) -> list:
     zeilen = lese_datei(datei_name)
     anz_fragen = int(zeilen[0])
@@ -27,7 +27,7 @@ def lade_fragen(datei_name: str) -> list:
         korrekter_index = -1 
 
         # besser noch: In Funktion auslagern -> kognitive Belastung
-        for alternative_index in range(ANZAHL_FRAGEN):
+        for alternative_index in range(ANZAHL_ALTERNATIVEN):
             alternative = zeilen[lese_index]
             if "CORRECT:" in alternative:
                 korrekter_index = alternative_index
