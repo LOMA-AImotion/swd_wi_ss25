@@ -33,7 +33,6 @@ def button_geklickt(button_id: int):
         # ich rechne modulo len(alle_fragen) damit ich nach dem Ende wieder vorne anfange
         aktuelle_frage = (aktuelle_frage + 1) % len(alle_fragen)
         # bei len(alle_fragen) brauche ich kein global, weil ich nur lese!
-        beschrifte_neu()    
         #   beschrifte Widgets neu
         beschrifte_neu()    
     else:
